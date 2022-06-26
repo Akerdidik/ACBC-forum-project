@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register form</title>
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+<div class="container">
+    <form id="form" class="form" autocomplete="on">
+        <h2 id="changing">Register with us</h2>
+        <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" onfocus="getFocus(this)" onblur = "Blur(this)" placeholder="Enter username" required>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" onfocus="getFocus(this)" onblur = "Blur(this)" placeholder="Enter password" required>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="password2">Confirm Password</label>
+            <input type="password" id="password2" onfocus="getFocus(this)" onblur = "Blur(this)" placeholder="Enter password again" required>
+            <small>Error message</small>
+        </div>
+        <button id = "submit" type = "submit" disabled = "disabled" onclick="audio.play()">SUBMIT</button>
+        <button id = "darc" type="submit">Dark mode</button>
+    </form>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scrpit.js"></script>
+</body>
+</html>
